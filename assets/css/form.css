@@ -129,35 +129,29 @@ main section ul li {
     justify-content: space-evenly;
 }
 
-.or li:nth-child(1) {order: 4;}
-.or li:nth-child(2) {order: 2;}
-.or li:nth-child(3) {order: 6;}
-.or li:nth-child(4) {order: 1;}
-.or li:nth-child(5) {order: 3;}
-.or li:nth-child(6) {order: 5;}
+.or li:nth-child(1) {order: 3;}
+.or li:nth-child(2) {order: 1;}
+.or li:nth-child(3) {order: 5;}
+.or li:nth-child(4) {order: 0;}
+.or li:nth-child(5) {order: 2;}
+.or li:nth-child(6) {order: 4;}
 
 .gr li {
     justify-content: flex-start; 
     padding: 25px;
+    flex-grow: 1;
 }
-.gr li:nth-child(1) {flex-grow: 1;}
-.gr li:nth-child(2) {flex-grow: 1;}
 .gr li:nth-child(3) {flex-grow: 2;}
-.gr li:nth-child(4) {flex-grow: 1;}
-.gr li:nth-child(5) {flex-grow: 1;}
-.gr li:nth-child(6) {flex-grow: 1;}
 
 .sh li {
-    width: 100%;
+    width: 250px;
     justify-content: flex-start; 
     padding: 25px;
+    flex-shrink: 1;
 }
-.sh li:nth-child(1) {flex-shrink: 1;}
-.sh li:nth-child(2) {flex-shrink: 1;}
 .sh li:nth-child(3) {flex-shrink: 2;}
-.sh li:nth-child(4) {flex-shrink: 1;}
-.sh li:nth-child(5) {flex-shrink: 1;}
-.sh li:nth-child(6) {flex-shrink: 1;}
+
+
 
 .gr2 {
     height: 400px;
