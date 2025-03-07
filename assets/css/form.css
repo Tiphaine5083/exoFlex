@@ -1,6 +1,8 @@
 * {
  box-sizing: border-box;
- font-family: sans-serif;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 14px;
+ color: #555555
 }
 
 body {
@@ -30,6 +32,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: #EEEEEE;
+    color: #333
 }
 
 main section {
@@ -45,9 +48,9 @@ padding: 0
 }
 
 main section ul li {
-    height: 50px;
-    width: 40px;
-    border: 1px solid #726c66;
+    height: 70px;
+    width: 60px;
+    border: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +76,7 @@ main section ul li {
 }
 
 .nw {
-    width: 18%;
+    width: 25%;
     flex-wrap: nowrap;
 }
 .nw li{
@@ -81,13 +84,98 @@ main section ul li {
 }
 
 .w {
-    width: 18%;
+    width: 25%;
     flex-wrap: wrap;
 }
 
 .aic {
     align-items: center;
 }
-.aic li:nth-child(even) {
-    height: 30px;
+.aic li:nth-child(odd) {
+    height: 100px;
+}
+
+.aifs {
+    align-items: flex-start;
+}
+.aifs li:nth-child(odd) {
+    height: 100px;
+}
+
+.aife {
+    align-items: flex-end;
+}
+.aife li:nth-child(odd) {
+    height: 100px;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcfe {
+    justify-content: flex-end;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.jcse {
+    justify-content: space-evenly;
+}
+
+.or li:nth-child(1) {order: 4;}
+.or li:nth-child(2) {order: 2;}
+.or li:nth-child(3) {order: 6;}
+.or li:nth-child(4) {order: 1;}
+.or li:nth-child(5) {order: 3;}
+.or li:nth-child(6) {order: 5;}
+
+.gr li {
+    justify-content: flex-start; 
+    padding: 25px;
+}
+.gr li:nth-child(1) {flex-grow: 1;}
+.gr li:nth-child(2) {flex-grow: 1;}
+.gr li:nth-child(3) {flex-grow: 2;}
+.gr li:nth-child(4) {flex-grow: 1;}
+.gr li:nth-child(5) {flex-grow: 1;}
+.gr li:nth-child(6) {flex-grow: 1;}
+
+.sh li {
+    width: 100%;
+    justify-content: flex-start; 
+    padding: 25px;
+}
+.sh li:nth-child(1) {flex-shrink: 1;}
+.sh li:nth-child(2) {flex-shrink: 1;}
+.sh li:nth-child(3) {flex-shrink: 2;}
+.sh li:nth-child(4) {flex-shrink: 1;}
+.sh li:nth-child(5) {flex-shrink: 1;}
+.sh li:nth-child(6) {flex-shrink: 1;}
+
+.gr2 {
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items:center
+}
+.gr2 li:nth-child(odd) {
+    width :20%;
+}
+.gr2 li:nth-child(even) {
+    width: 45%;
+}
+
+.gr2 li {
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
 }
